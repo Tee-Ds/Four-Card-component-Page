@@ -1,0 +1,172 @@
+* {
+    box-sizing: border-box;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+body {
+    background: hsl(0, 0%, 98%);
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    height: 25dvh;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 13px;
+    line-height: 20px;
+    opacity: 0.8;
+}
+
+h1,
+p {
+    color: hsl(229, 6%, 66%);
+}
+
+header>p {
+    font-size: 14px;
+    width: 38%;
+    margin-left: 31%;
+}
+
+.h2,
+h4 {
+    color: hsl(234, 12%, 34%);
+}
+
+h1 {
+    font-weight: lighter;
+    margin-bottom: 10px;
+}
+
+.h2 {
+    font-weight: 600;
+}
+
+h4 {
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+
+.con {
+    display: flex;
+    height: 70dvh;
+    justify-content: center;
+    position: relative;
+}
+
+.container {
+    display: flex;
+    gap: 25px;
+    position: relative;
+    justify-content: center;
+}
+
+.card {
+    height: 46%;
+    width: 26%;
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 3px 11px 16px -2px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+
+.supervisor {
+    align-self: center;
+    border-top: 3px solid hsl(180, 62%, 55%);
+}
+
+.team-b {
+    position: absolute;
+    left: 37%;
+    border-top: 3px solid hsl(0, 78%, 62%);
+}
+
+img {
+    width: 20%;
+    position: relative;
+    left: 75%;
+    bottom: -10px;
+}
+
+.karma {
+    align-self: flex-end;
+    border-top: 3px solid hsl(34, 97%, 64%);
+}
+
+.calculator {
+    align-self: center;
+    border-top: 3px solid hsl(212, 86%, 64%);
+}
+
+@media (max-width:375px) {
+    * {
+        box-sizing: content-box;
+    }
+
+    .attribution {
+        display: none;
+    }
+
+    .container {
+        flex-direction: column;
+        justify-content: unset;
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 27px;
+    }
+
+    header>p {
+        font-size: 19px;
+        opacity: 0.7;
+        line-height: 27px;
+        margin-bottom: 50px;
+        width: 100%;
+        margin-left: 0;
+        margin-top: 0;
+    }
+
+    img {
+        width: 25%;
+    }
+
+    h4 {
+        font-size: 19px;
+    }
+
+    .card-text {
+        font-size: 15px;
+        line-height: 25px
+    }
+
+    .card {
+        height: 60%;
+        align-self: unset;
+        justify-self: unset;
+        width: 75%;
+        padding: 25px;
+    }
+
+    header {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .team-b {
+        position: static;
+    }
+}
